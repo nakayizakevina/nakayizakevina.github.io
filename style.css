@@ -1,1 +1,234 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+html {
+    scroll-behavior: smooth;
+}
+
+.landing-section {
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+}
+
+:is(.header, .menu-items, .hero-section, .about-me, .about-heading-container, .skills-section) {
+    display: flex;
+}
+
+.landing-section {
+    background-image: linear-gradient(120deg, #47b870, #3a7d9e);
+}
+
+.header {
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.menu-items {
+    gap: 4rem;
+}
+
+.menu-items li {
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.name-description {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 50vw;
+    padding-left: 6rem;
+    margin-top: 5rem;
+}
+
+.name {
+    font-size: 3.5rem;
+}
+
+.description {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+.hire-me {
+    width: 30%;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+}
+
+/* Styles for About me section ↓ */
+
+.about-me {
+    height: 100vh;
+    width: 100vw;
+    background: rgb(0, 0, 0);
+    /* background-image: url(./Images/Kevina\ photo\ 2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    color: #fff;
+}
+
+.about-heading-container {
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about-me-heading {
+    font-size: 3.5rem;
+}
+
+.about-description-container {
+    width: 50vw;
+    padding: 6rem 0;
+}
+
+.about-me-description {
+    font-size: 1.2rem;
+}
+
+/* Styles for skills section ↓ */
+.skills-section {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(135deg, #316b46, #1d6386);
+    flex-direction: row-reverse;
+}
+
+.skills-heading {
+    font-size: 3.5rem;
+}
+
+.skill-heading-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.skills-container {
+    width: 50%;
+    display: flex;
+    column-gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6rem;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 4rem;
+}
+
+.skill-container div {
+    padding: 6rem;
+    outline: 3px solid rgb(27, 178, 27);
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.skill-container div:hover {
+    outline: none;
+    color: green;
+    background: rgb(212, 207, 207);
+    transition: 10s linear infinite ease-in-out;
+}
+
+/* Styles for contact me section ↓ */
+
+.contact-me {
+    background: rgb(194, 188, 188);
+    height: 25vh;
+    width: 100vw;
+}
+
+.contact-me {
+    padding-top: 2rem;
+}
+
+.contactme-heading,
+.contactme-description {
+    text-align: center;
+}
+
+.contact-me ul {
+    padding-top: 2rem;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.contactme-list li{
+    /* list-style-type: "🔥"; */
+    list-style-type: none;
+    padding-left: 0.2rem;
+}
+
+.contactme-list a {
+    text-decoration: none;
+    background-image: linear-gradient(120deg, #47b870, #3a7d9e);
+    padding: 0.4rem 1rem;
+    border-radius: 0.4rem;
+    color: #fff;
+}
+
+@media (max-width:540px) {
+    .menu-items{
+        display: none;
+    }
+
+    .hero-image{
+        display: none;
+    }
+
+    .name-description{
+        width: 95%;
+        padding: 2rem;
+        margin: 0px;
+        height: auto;
+    }
+    .header{
+        width: 95%;
+        padding: 2rem;
+    }
+
+    .hire-me{
+        width: 40%;
+
+    }
+}
+
+@media(min-width:540px){
+    .meun-icon{
+        display: none;
+    }
+}
