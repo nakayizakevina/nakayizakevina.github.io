@@ -223,7 +223,33 @@ html {
 
     .hire-me{
         width: 40%;
+    }
+    
+    .about-me{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .about-description-container{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .skills-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-container{
+        border: 1px solid red;
+        width: 90%;
+        margin: 1.2rem;
+    }
+
+    .skill-container{
+        row-gap: 0.5rem;
     }
 }
 
