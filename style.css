@@ -201,6 +201,12 @@ html {
     color: #fff;
 }
 
+.images{
+    display: block;
+    width:inherit;
+    height: inherit;
+}
+
 @media (max-width:540px) {
     .menu-items{
         display: none;
@@ -224,7 +230,7 @@ html {
     .hire-me{
         width: 40%;
     }
-    
+
     .about-me{
         display: flex;
         flex-direction: column;
@@ -254,7 +260,7 @@ html {
 }
 
 @media(min-width:540px){
-    .meun-icon{
+    .menu-icon{
         display: none;
     }
 }
