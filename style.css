@@ -73,6 +73,14 @@ html {
     font-size: 1rem;
 }
 
+.hire-me:hover{
+    background-color:#3a7d9e;
+    border-radius: 30px;
+    opacity: 55%;
+    color: white;
+    font-size:20px;
+    font-family: serif;
+}
 /* Styles for About me section ↓ */
 
 .about-me {
